@@ -4,7 +4,7 @@ Erp::Contacts::Engine.routes.draw do
 			resources :titles do
 				collection do
 					post 'list'
-					get 'dataselect'
+					post 'dataselect'
 					delete 'delete_all'
 					put 'archive'
 					put 'unarchive'
@@ -15,7 +15,7 @@ Erp::Contacts::Engine.routes.draw do
 			resources :tags do
 				collection do
 					post 'list'
-					get 'dataselect'
+					post 'dataselect'
 					delete 'delete_all'
 					put 'archive'
 					put 'unarchive'
@@ -26,7 +26,7 @@ Erp::Contacts::Engine.routes.draw do
 			resources :contacts do
 				collection do
 					post 'list'
-					get 'dataselect'
+					post 'dataselect'
 					delete 'delete_all'
 					put 'archive'
 					put 'unarchive'
@@ -44,7 +44,7 @@ Erp::Contacts::Engine.routes.draw do
 			resources :contact_groups do
 				collection do
 					post 'list'
-					get 'dataselect'
+					post 'dataselect'
 					delete 'delete_all'
 					put 'archive'
 					put 'unarchive'
