@@ -259,7 +259,7 @@ module Erp
           # Only allow a trusted parameter "white list" through.
           def contact_params
             params.fetch(:contact, {}).permit(:parent_id, :image_url, :contact_type, :is_customer, :is_supplier, :code, :name,
-              :company_name, :phone, :address, :tax_code, :birthday,
+              :company_name, :phone, :hotline, :address, :tax_code, :birthday,
               :email, :gender, :note, :fax, :website,
               :commission_percent, :new_account_commission_amount, :archived, :user_id, :salesperson_id,
               :init_debt_amount, :init_debt_date, :init_supplier_debt_amount, :init_supplier_debt_date,

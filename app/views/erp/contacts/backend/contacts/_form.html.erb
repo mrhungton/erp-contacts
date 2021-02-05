@@ -65,10 +65,19 @@
                                     name: 'contact[phone]',
                                     value: contact.phone,
                                     label: t('.phone'),
+                                    help: t('.help_phone'),
                                     placeholder: t('.enter_phone_numbers')
                                 }) %>
                             </div>
                             <div class="col-md-6 col-sm-6">
+                                <%= erp_form_control("text", {
+                                    name: 'contact[hotline]',
+                                    value: contact.hotline,
+                                    label: t('.hotline'),
+                                    placeholder: t('.enter_hotline_numbers')
+                                }) %>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
                                 <%= erp_form_control("email", {
                                     name: 'contact[email]',
                                     value: contact.email,

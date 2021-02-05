@@ -34,6 +34,11 @@
                     <%= t('.phone') %>
                 </th>
             <% end %>
+            <% if get_columns(params).include?("hotline") %>
+                <th>
+                    <%= t('.hotline') %>
+                </th>
+            <% end %>
             <% if get_columns(params).include?("email") %>
                 <th>
                     <%= t('.email') %>
@@ -105,6 +110,9 @@
                 <% end %>
                 <% if get_columns(params).include?("phone") %>
                 <td><%= contact.phone %></td>
+                <% end %>
+                <% if get_columns(params).include?("hotline") %>
+                <td><%= contact.hotline %></td>
                 <% end %>
                 <% if get_columns(params).include?("email") %>
                 <td><%= contact.email %></td>
